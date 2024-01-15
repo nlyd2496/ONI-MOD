@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{930C551D-EB37-4FA6-AA09-FAAEA60F12C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>吐泡泡的小鱼的缺氧模组</RootNamespace>
+    <AssemblyName>吐泡泡的小鱼的缺氧模组</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="ArabicSupport">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\ArabicSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PLib, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\PLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A_基地\A004GG1-精致墙壁.cs" />
+    <Compile Include="A_基地\A005GG1-看不见的门.cs" />
+    <Compile Include="A_基地\A006GG1-隔热砖不导热.cs" />
+    <Compile Include="A_基地\A007GG1-打印舱不发光.cs" />
+    <Compile Include="A_基地\A008GG1-隐形台阶.cs" />
+    <Compile Include="A_基地\A009GG1-安全门.cs" />
+    <Compile Include="A_基地\A010GG1-大箱子.cs" />
+    <Compile Include="A_基地\A011GG1-红色和蓝色的垃圾桶.cs" />
+    <Compile Include="B_植物\B001GG1-超级氧齿阙.cs" />
+    <Compile Include="动物\斯巴达300螃蟹.cs" />
+    <Compile Include="动物\活得久的海牛.cs" />
+    <Compile Include="医疗\医废桶-A66GG1.cs" />
+    <Compile Include="医疗\开发者维生器.cs" />
+    <Compile Include="医疗\辐射药丸使用阈值.cs" />
+    <Compile Include="医疗\饥荒入侵计划-A77GG1.cs" />
+    <Compile Include="医疗\高效按摩床.cs" />
+    <Compile Include="A_基地\A001GG1-魔女的箱子.cs" />
+    <Compile Include="A_基地\A002GG1-墨家的门.cs" />
+    <Compile Include="A_基地\A003GG1-大储存砖.cs" />
+    <Compile Include="基础属性\无需研究.cs" />
+    <Compile Include="基础属性\沉默喷泉.cs" />
+    <Compile Include="基础属性\箱子箱子箱子.cs" />
+    <Compile Include="实用\A81GG1_KZQ-智能空间加热器.cs" />
+    <Compile Include="实用\A82GG1_KZQ-智能液体加热器.cs" />
+    <Compile Include="实用\A83GG12-KZQ-A83GG1-A83GG0-温度场.cs" />
+    <Compile Include="实用\A84GG1_KZQ-A84GG1-A84GG0-恒温空间.cs" />
+    <Compile Include="家具\ACGN之头发-A29GG4.cs" />
+    <Compile Include="家具\ACGN之衣裳-A29GG3.cs" />
+    <Compile Include="家具\ACGN之裤子-A29GG2.cs" />
+    <Compile Include="家具\ACGN之鞋子-A29GG1.cs" />
+    <Compile Include="家具\九块九包邮的花盆-A43GG1-9.cs" />
+    <Compile Include="家具\恭喜faker拿下第四个S赛冠军-A79GG1.cs" />
+    <Compile Include="家具\梯子\冰梯子-A68GG1.cs" />
+    <Compile Include="家具\梯子\木头梯子-A68GG3.cs" />
+    <Compile Include="家具\梯子\金梯子-A68GG2.cs" />
+    <Compile Include="家具\熊猫贴纸-A35GG1.cs" />
+    <Compile Include="家具\牛战士的面具-A37GG1.cs" />
+    <Compile Include="家具\猛男的浴缸.cs" />
+    <Compile Include="家具\翻飞幻梦-A36GG1.cs" />
+    <Compile Include="家具\英雄联盟宣传片-A34GGG1.cs" />
+    <Compile Include="家具\萤火虫灯-A30GG1.cs" />
+    <Compile Include="家具\下雪啦-A24GG1.cs" />
+    <Compile Include="家具\中国兵器之兵器-A28GG1.cs" />
+    <Compile Include="家具\中国兵器之武器架-A28GG12.cs" />
+    <Compile Include="家具\南瓜灯-A22GG1.cs" />
+    <Compile Include="家具\启动魔法少女-A25GG1.cs" />
+    <Compile Include="家具\圣诞树-A20GG1.cs" />
+    <Compile Include="家具\圣诞礼物-A21GG1.cs" />
+    <Compile Include="家具\天地棋局-A27GG1.cs" />
+    <Compile Include="家具\梦可床-A26GG1.cs" />
+    <Compile Include="家具\沥青滴漏实验-A23GG1.cs" />
+    <Compile Include="家具\粉红灯.cs" />
+    <Compile Include="家具\角顶饰条显示在建筑前方.cs" />
+    <Compile Include="家具\警示牌-A80GG1.cs" />
+    <Compile Include="家具\闪烁的雕塑.cs" />
+    <Compile Include="家具\香草餐桌-A50GG1.cs" />
+    <Compile Include="家具\香草摇摇床-A31GG1.cs" />
+    <Compile Include="家具\香草梯子-A33GG1.cs" />
+    <Compile Include="家具\香草花盆-A32GG1.cs" />
+    <Compile Include="控制器\A011GG0-红色和蓝色的垃圾桶.cs" />
+    <Compile Include="控制器\A78GG1234_KZQ.cs" />
+    <Compile Include="控制器\A82GG1_KZQ-智能液体加热器.cs" />
+    <Compile Include="控制器\A81GG1_KZQ-智能空间加热器.cs" />
+    <Compile Include="控制器\A84GG1_KZQ-恒温空间.cs" />
+    <Compile Include="控制器\A83GG12_KZQ-温度场.cs" />
+    <Compile Include="控制器\A85GG1_KZQ-魔女的箱子.cs" />
+    <Compile Include="控制器\超级矿机_KZQ.cs" />
+    <Compile Include="控制器\辐射掌-A69GG1_KZQ.cs" />
+    <Compile Include="控制器\液体空罐器-A57GG2_KZQ.cs" />
+    <Compile Include="控制器\气体空罐器-A57GG1_KZQ.cs" />
+    <Compile Include="控制器\气体灌装器-A56GG1_KZQ.cs" />
+    <Compile Include="控制器\液体灌装器-A47GG1_KZQ.cs" />
+    <Compile Include="控制器\灯范围功率-A30GG1_KZQ.cs" />
+    <Compile Include="控制器\牛战士的面具-A37GG1_KZQ.cs" />
+    <Compile Include="控制器\智能电解器-A40GG1_KZQ.cs" />
+    <Compile Include="控制器\热量终结者-A59GG1_KZQ.cs" />
+    <Compile Include="控制器\萤火虫灯动画控制器-A30GG1-DHKZQ.cs" />
+    <Compile Include="控制器\闪烁的雕塑-A76GG1_KZQ.cs" />
+    <Compile Include="氧气\制氧机-A40GG1.cs" />
+    <Compile Include="氧气\气体发生器-A41GG1-5\二氧化碳发生器-A41GG4.cs" />
+    <Compile Include="氧气\气体发生器-A41GG1-5\氯气发生器-A41GG3.cs" />
+    <Compile Include="氧气\气体发生器-A41GG1-5\氢气发生器-A41GG5.cs" />
+    <Compile Include="氧气\气体发生器-A41GG1-5\天然气发生器-A41GG2.cs" />
+    <Compile Include="氧气\气体发生器-A41GG1-5\氧气发生器-A41GG1.cs" />
+    <Compile Include="氧气\淘金热-A42GG1.cs" />
+    <Compile Include="火箭\侦查者电量修改.cs" />
+    <Compile Include="火箭\增强火箭引擎.cs" />
+    <Compile Include="火箭\火箭更大货仓.cs" />
+    <Compile Include="火箭\火箭燃料仓输入更改.cs" />
+    <Compile Include="火箭\高效钻头前锥.cs" />
+    <Compile Include="站台\优化氧气面罩-A78GG1_KZQ.cs" />
+    <Compile Include="站台\A78GG1234_KZQ-太空服氧气容量可调.cs" />
+    <Compile Include="管道\二乘三的淋浴间-A44GG1.cs" />
+    <Compile Include="管道\可调节的气体灌装器.cs" />
+    <Compile Include="管道\可调节的空罐器.cs" />
+    <Compile Include="管道\喵喵排风扇-A45GG1\二氧化碳-A45GG1.cs" />
+    <Compile Include="管道\喵喵排风扇-A45GG1\氢气-A45GG4.cs" />
+    <Compile Include="管道\喵喵排风扇-A45GG1\氯气-A45GG3.cs" />
+    <Compile Include="管道\喵喵排风扇-A45GG1\污染氧-A45GG5.cs" />
+    <Compile Include="管道\喵喵排风扇-A45GG1\甲烷-A45GG2.cs" />
+    <Compile Include="管道\垂直液泵-A46GG1.cs" />
+    <Compile Include="管道\导热管道\导热气体管道-A53GG1.cs" />
+    <Compile Include="管道\导热管道\导热液体管道-A54GG1.cs" />
+    <Compile Include="管道\开发者气泵.cs" />
+    <Compile Include="管道\开发者液泵.cs" />
+    <Compile Include="管道\户外环保厕所.cs" />
+    <Compile Include="管道\核废水处理桶-A55GG1.cs" />
+    <Compile Include="管道\液体灌装器-A47GG1.cs" />
+    <Compile Include="管道\热量终结者-A59GG0.cs" />
+    <Compile Include="管道\热量终结者-A59GG1.cs" />
+    <Compile Include="管道\C001GG1-隔热管道不导热.cs" />
+    <Compile Include="管道\管道桥\气管桥-A52GG1.cs" />
+    <Compile Include="管道\管道桥\液管桥-A51GG1.cs" />
+    <Compile Include="管道\管道监测器可穿墙.cs" />
+    <Compile Include="管道\管道阀可穿墙.cs" />
+    <Compile Include="管道\绝命毒师.cs" />
+    <Compile Include="管道\超级泵.cs" />
+    <Compile Include="管道\超级管道.cs" />
+    <Compile Include="管道\迷你液泵-A48GG1.cs" />
+    <Compile Include="管道\隐藏排气口.cs" />
+    <Compile Include="管道\香草抽水马桶-A49GG1.cs" />
+    <Compile Include="管道\黄金淋浴间-A58GG1.cs" />
+    <Compile Include="精炼\催化二氧化碳制乙醇-A60GG1.cs" />
+    <Compile Include="精炼\堆肥堆不会释放气体.cs" />
+    <Compile Include="精炼\气体液化机-A65GG1.cs" />
+    <Compile Include="精炼\热裂解甲烷制钻石-A64GG1.cs" />
+    <Compile Include="精炼\石油井-A67GG1.cs" />
+    <Compile Include="精炼\石油精炼器-A62GG1.cs" />
+    <Compile Include="精炼\石油裂解器-A61GG1.cs" />
+    <Compile Include="精炼\粉碎镁铁质岩生产铁.cs" />
+    <Compile Include="精炼\精炼镁铁质岩生产铁.cs" />
+    <Compile Include="精炼\调整藻类蒸馏器.cs" />
+    <Compile Include="组件\Helper.cs" />
+    <Compile Include="自动化\信号线和信号桥\2格信号桥-A72GG1.cs" />
+    <Compile Include="自动化\信号线和信号桥\2格信号组桥-A72GG2.cs" />
+    <Compile Include="自动化\信号线和信号桥\3格信号桥-A72GG3.cs" />
+    <Compile Include="自动化\信号线和信号桥\3格信号组桥-A72GG4.cs" />
+    <Compile Include="自动化\天工复制人探测器-A71GG1.cs" />
+    <Compile Include="自动化\闹钟-A73GG1.cs" />
+    <Compile Include="辐射\超级开发者辐射器.cs" />
+    <Compile Include="辐射\强化辐射粒子收集器.cs" />
+    <Compile Include="辐射\核废料处理器-A70GG1-2.cs" />
+    <Compile Include="辐射\辐射掌-A69GG1.cs" />
+    <Compile Include="辐射\铅完全隔绝辐射.cs" />
+    <Compile Include="运输\超次元矿机-A75GG1.cs" />
+    <Compile Include="运输\超级开发者固体泵.cs" />
+    <Compile Include="运输\超级矿机.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG9.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG8.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG4.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG5.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG7.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG6.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG3.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG2.cs" />
+    <Compile Include="食物\冰淇淋\冰淇淋-D1GG1.cs" />
+    <Compile Include="食物\冰淇淋机-A39GG1.cs" />
+    <Compile Include="食物\月饼\芝麻月饼-E1GG3.cs" />
+    <Compile Include="食物\月饼\冰皮月饼-E1GG4.cs" />
+    <Compile Include="食物\月饼\鲜花月饼-E1GG2.cs" />
+    <Compile Include="食物\月饼\鲜肉月饼-E1GG1.cs" />
+    <Compile Include="食物\植物\冰霜萝卜无辐射.cs" />
+    <Compile Include="食物\食物\菜饺子-C7GG1.cs" />
+    <Compile Include="食物\食物\豆花饭-C5GG1.cs" />
+    <Compile Include="食物\食物\水煮鱼-C2GG1.cs" />
+    <Compile Include="食物\食物\辣椒炒肉-C3GG1.cs" />
+    <Compile Include="食物\食物\肉馅饺子-C6GG1.cs" />
+    <Compile Include="食物\食物\麻辣烫-C4GG1.cs" />
+    <Compile Include="食物\种子研究站-B0GG0.cs" />
+    <Compile Include="食物\强化冰箱.cs" />
+    <Compile Include="食物\植物\B1GG0.cs" />
+    <Compile Include="组件\FUI_SideScreen.cs" />
+    <Compile Include="组件\SignSideScreen.cs" />
+    <Compile Include="基础属性\万物皆可旋转-待定.cs" />
+    <Compile Include="基础属性\喷泉无压力反应.cs" />
+    <Compile Include="基础属性\无限缩放.cs" />
+    <Compile Include="基础属性\更大操作距离.cs" />
+    <Compile Include="基础属性\永喷泉.cs" />
+    <Compile Include="基础属性\游戏加速.cs" />
+    <Compile Include="基础属性\砖块上行进速度.cs" />
+    <Compile Include="基础属性\高速经验.cs" />
+    <Compile Include="家具\La’eeb2022卡塔尔世界杯吉祥物-A19GG1.cs" />
+    <Compile Include="家具\叠叠床-A14GG1.cs" />
+    <Compile Include="家具\吊床-A15GG1.cs" />
+    <Compile Include="家具\喵喵床-A11GG1-A11GG2.cs" />
+    <Compile Include="家具\恭喜DRX夺得英雄联盟S12全球总决赛冠军-A16GG1.cs" />
+    <Compile Include="家具\时尚点唱机-A12GG1.cs" />
+    <Compile Include="家具\智能吸顶灯.cs" />
+    <Compile Include="家具\简单漂亮床-A13GG1.cs" />
+    <Compile Include="家具\背景灯-A18GG1.cs" />
+    <Compile Include="家具\超级冰雕.cs" />
+    <Compile Include="建筑栏.cs" />
+    <Compile Include="控制器\灯亮度功率-A17GG1_KZQ.cs" />
+    <Compile Include="控制器\背景灯-A18GG1_KZQ.cs" />
+    <Compile Include="控制器\蒸汽机吸气效率-A6GG1_KZQ.cs" />
+    <Compile Include="电力\一格电池-A3GG1.cs" />
+    <Compile Include="电力\南孚电池-A1GG1.cs" />
+    <Compile Include="电力\梦世界的电线-A5GG1_kanim.cs" />
+    <Compile Include="电力\民用电池组-A2GG1.cs" />
+    <Compile Include="电力\细电线-A4GG1.cs" />
+    <Compile Include="电力\超级蒸汽机.cs" />
+    <Compile Include="电力\输电线桥\跨三格导线桥-A9GG1.cs" />
+    <Compile Include="电力\输电线桥\跨三格电线桥-A10GG1.cs" />
+    <Compile Include="电力\输电线桥\跨两格导线桥-A7GG1.cs" />
+    <Compile Include="电力\输电线桥\跨两格电线桥-A8GG1.cs" />
+    <Compile Include="电力\输电线载荷.cs" />
+    <Compile Include="电力\高负荷线可穿墙.cs" />
+    <Compile Include="研究栏.cs" />
+    <Compile Include="基础属性\永不淹没.cs" />
+    <Compile Include="基础属性\永不过热.cs" />
+    <Compile Include="组件\CaiLib组件\CaiLib.Config.cs" />
+    <Compile Include="组件\CaiLib组件\CaiLib.Logger.cs" />
+    <Compile Include="组件\CaiLib组件\CaiLib.Utils.cs" />
+    <Compile Include="基础属性\超级装饰.cs" />
+    <Compile Include="电力\超级开发者电池.cs" />
+    <Compile Include="电力\基础电池容量无穷大.cs" />
+    <Compile Include="描述.cs" />
+    <Compile Include="电力\超级氢气发电机.cs" />
+    <Compile Include="翻译组件.cs" />
+    <Compile Include="0控制台.cs" />
+    <Compile Include="核心组件.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="食物\植物\辣椒籽+辣椒树+辣椒-B1GG1+B1GG2+B1GG3.cs" />
+    <Compile Include="食物\食物\辣椒炒辣椒-C1GG1.cs" />
+    <Compile Include="食物\氢气灶-A38GG1.cs" />
+    <Compile Include="食物\被诅咒的冰箱门.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="个性限定\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
